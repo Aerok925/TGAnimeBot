@@ -18,7 +18,6 @@ func newConfig() *Config {
 
 func loadConfig() *Config {
 	config := newConfig()
-	log.Println("Qweqwe")
 	yamlFile, err := ioutil.ReadFile("config/conf.yaml")
 	if err != nil {
 		log.Println(err)
